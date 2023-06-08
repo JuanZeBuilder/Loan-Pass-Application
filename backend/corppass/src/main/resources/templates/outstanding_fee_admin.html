@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title th:remove="all">Outstanding Fee(Corporate Pass Lost Report)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+    body {
+      font-family: calibri, 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    }
+    a.link {
+      border: solid 1px #000;
+      background-color: #000;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      display: block;
+      width: 360px;
+      text-align: center;
+      padding: 10px 0;
+    }
+    td, th {
+        text-align: center;
+        padding: 7px;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+Dear Admin,<br/>
+<br/>
+Please inform your staff of their outstanding charges. The details are as follows:
+<br/>
+<br/>
+<table>
+  <tr>
+    <th>Outstanding Fee Id</th>
+    <th>Staff Name</th>
+    <th>Staff Email</th>
+    <th>CorpassId</th>
+    <th>Outstanding Amount</th>
+    <th>Card Type</th>
+    <th>Attraction Name</th>
+  </tr>
+    <tr>
+    <td th:text="${outstandingFeeId}">Outstanding Fee Id</td>
+    <td th:text="${staffName}">Staff Name</td>
+    <td th:text="${staffEmail}">Staff Email</td>
+    <td th:text="${corpassId}">Corpass ID</td>
+    <td th:text="${staffOutstandingAmount}">Outstanding Amount</td>
+    <td th:text="${cardType}">Card Type</td>
+    <td th:text="${attractionName}">Attraction Name</td>
+  </tr>
+</table>
+<p>
+  Warmest Regards, <br />
+  &emsp; <em>Corporate Pass System</em>
+</p>
+</body>
+</html>

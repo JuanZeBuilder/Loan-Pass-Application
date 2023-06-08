@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"><head>
+	<title th:remove="all">Corporate Pass Loan confirmed</title>
+	
+	
+	
+	
+	
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+    body {
+      font-family: calibri, 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    }
+    a.link {
+      border: solid 1px #000;
+      background-color: #000;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      display: block;
+      width: 360px;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body><p>Dear <strong><span th:text="${name}">Name</span></strong>,</p><p>We are pleased to inform that your booking to <strong><span th:text="${membershipName}">membershipName</span></strong> is confirmed as follows:</p><p>Date of Visit: <strong><span th:text="${dateOfVisit}">dateOfVisit</spanb></strong> (1 day only)</p><p>Membership ID: <strong><span th:text="${membershipID}">membershipID</span></strong></p><p><br></p><p>For any change in visit date, you are required to cancel your booking (at least 1 day before) and to submit a new booking in the system.</p><p><br></p><p>Attached is the authorisation letter to <strong><span th:text="${attractionName}">attractionName</span></strong>. Please check that the details are accurate.</p><p><br></p><p>Please take note of the following for your visit to <strong><span th:text="${attractionName}">attractionName</span></strong>:</p><ul><li>Present this email confirmation to the General Office to collect the membership card(s).</li><li>Collect the membership card(s) from the General Office one day before your visit date and return the membership card(s) by 9am the next working day after your visit.</li><li>Present the membership card(s), the authorisation letter and your staff pass at the entrance of <strong><span th:text="${attractionName}">attractionName</span></strong></li><li>Entry is strictly based on the membership card(s) and the authorisation letter.</li><li>Your presence is required on the day of visit. Entry will be denied without staff's presence.</li><li>Your booking is non-transferable.</li><li>Visit date is strictly based on the date stated in this email and the authorisation letter.</li><li>Staff found abusing the membership(s) will be subject to disciplinary actions.</li></ul><p><br></p><p>Enjoy your visit to <strong><span th:text="${membershipName}">membershipName</span></strong>!</p><p><br></p><p><br></p><p>Warm Regards,</p><p><em>HR Department</em></p></body></html>

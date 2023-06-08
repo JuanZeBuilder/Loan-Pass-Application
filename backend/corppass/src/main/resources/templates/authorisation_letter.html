@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title th:remove="all">Authorisation Letter</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+    body {
+      font-family: calibri, 'DejaVu Sans', Arial, Helvetica, sans-serif;
+      margin-left: 10%;
+      margin-top: 10%;
+    }
+    a.link {
+      border: solid 1px #000;
+      background-color: #000;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      display: block;
+      width: 360px;
+      text-align: center;
+      padding: 10px 0;
+    }
+    td, th {
+        text-align: center;
+        padding: 7px;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+<h1 style="text-align:center;text-decoration: underline;">Singapore Sport School</h1>
+Date: <label th:text="${borrowDate}"></label>
+
+<p th:text="${address}">
+Wildlife Reserves Singapore</br>
+80 Mandai Lake Road</br>
+Singapore 729826</br>
+</p>
+<br/>
+<br/>
+<br/>
+Dear Sir/Madam
+<br/>
+<h3 style="font-weight:bold">AUTHORISATION LETTER </h3>
+<h3 style="font-weight:bold" th:text="${membershipName}">PREMIUM CORPORATE FRIENDS OF THE ZOO (CFOZ) MEMBERSHIP</h3>
+<br/>
+<p>Singapore Sports School hereby authorise our employee identified below, to utilise our 
+<label th:text="${membershipType}">CFOZ Premium Card(s) </label> 
+on the date as indicated.
+</p>
+<br/>
+<br/>
+<h4 style="font-weight:bold">Date of Visit:</h4><label th:text="${loanPassDate}"></label>
+<br/>
+<h4 style="font-weight:bold">Name of Employee:</h4>
+<label th:text="${userName}"></label>
+<br/>
+<br/>
+Thank you.
+<p>
+  Human Resource Department <br />
+  (This is a system generated letter.)
+</p>
+</body>
+</html>
