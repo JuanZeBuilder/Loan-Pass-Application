@@ -3,10 +3,10 @@
 
 This project is a pass loaning web application for Singapore Sports School. 
 
-# Tech Stack: 
-## Frontend: Reactjs (ChakraUI framework)
-## Backend: Java (SpringBoot)
-## Database: MySQL
+Tech Stack: 
+  - Frontend: Reactjs (ChakraUI framework)
+  - Backend: Java (SpringBoot)
+  - Database: MySQL
 
 
 ## Deployment
