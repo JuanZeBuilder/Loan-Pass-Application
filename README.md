@@ -1,8 +1,12 @@
 
 # Corporate Pass Application
 
-This project is a pass loaning application for Singapore Sports School.
+This project is a pass loaning web application for Singapore Sports School. 
 
+# Tech Stack: 
+## Frontend: Reactjs (ChakraUI framework)
+## Backend: Java (SpringBoot)
+## Database: MySQL
 
 
 ## Deployment
